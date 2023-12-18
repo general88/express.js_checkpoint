@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-port = 5000;
+port = process.env.PORT || 5000;
 const path = require("node:path");
 
 //middleware function to check day of the week and time of the day

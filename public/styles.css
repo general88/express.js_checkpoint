@@ -23,7 +23,7 @@ a {
 a :active {
   color: red;
 }
-a :hover{
+a :hover {
   color: blue;
 }
 #link {
@@ -31,18 +31,23 @@ a :hover{
   gap: 25px;
 }
 
-
-.blink_text{	
-  animation-name:blink;
-  width:450px;
-  animation-duration:2s;
-  animation-timing-function:ease-in;
-  animation-iteration-count:Infinite;
+.blink_text {
+  animation-name: blink;
+  width: 450px;
+  animation-duration: 2s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: Infinite;
   margin-top: 20px;
- 
-  }
+}
 
-@keyframes blink{
-  0%{color:red;}
-  50%{color:white;}
-  100%{color:red;}
+@keyframes blink {
+  0% {
+    color: red;
+  }
+  50% {
+    color: white;
+  }
+  100% {
+    color: red;
+  }
+}

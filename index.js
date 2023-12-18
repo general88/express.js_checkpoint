@@ -11,6 +11,8 @@ const checker = (req, res, next) => {
   const hourOfDay = now.getHours();
   console.log(hourOfDay);
 
+  app.use(express.static(path.resolve(__dirname, "public")));
+
   // Check if it's Monday to Friday and between 9 AM and 5 PM
   const isWorkingHours =
     dayOfWeek >= 1 && dayOfWeek <= 5 && hourOfDay >= 9 && hourOfDay < 17;

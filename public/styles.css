@@ -1,0 +1,48 @@
+* {
+  max-width: 1000px;
+  margin: auto;
+  box-sizing: border-box;
+}
+body {
+  margin-top: 10px;
+}
+img {
+  height: 50px;
+  width: 50px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  background-color: black;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+a :active {
+  color: red;
+}
+a :hover{
+  color: blue;
+}
+#link {
+  display: flex;
+  gap: 25px;
+}
+
+
+.blink_text{	
+  animation-name:blink;
+  width:450px;
+  animation-duration:2s;
+  animation-timing-function:ease-in;
+  animation-iteration-count:Infinite;
+  margin-top: 20px;
+ 
+  }
+
+@keyframes blink{
+  0%{color:red;}
+  50%{color:white;}
+  100%{color:red;}
